@@ -20,7 +20,7 @@ def test_romanize_number_can_not_be_zero():
     assert_equal(e.exception.message, 'can not romanize zero')
 
 def test_romanize_returns_string():
-    assert_is_instance(romanize(random.randint(1,1000)), str)
+    assert_is_instance(romanize(random.randint(1, 1000)), str)
 
 
 def test_romanize_should_encode_single_digit_numbers():
